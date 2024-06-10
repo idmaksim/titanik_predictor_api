@@ -20,7 +20,9 @@ async def add_user(
 ):
     try:
         predict = await service.predict(user_info)
-        return predict
+        return {
+            'survival': predict
+        }
     
     except Exception as e:
         await handle_route_error(e, status_code=status.HTTP_400_BAD_REQUEST)

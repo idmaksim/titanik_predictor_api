@@ -11,7 +11,7 @@ class ModelService:
     async def predict(self, user_info: UserInfo):
         df = await self.to_dataframe(user_info)
         pred = self.model.predict(df)
-        return 'Вы выжили' if pred else 'Вы не выжили'
+        return bool(pred)
 
 
     async def to_dataframe(self, user_info: UserInfo) -> DataFrame:
