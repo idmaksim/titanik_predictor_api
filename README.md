@@ -1,6 +1,6 @@
-# This a simple survival predictor
-This model predicts survival on titanik by your data
+# Simple survival predictor
 ## Info
+This model predicts survival on titanik by your data
 This model was trained on this dataset: https://www.kaggle.com/datasets/yasserh/titanic-dataset
 
 ## to run this project you need:
