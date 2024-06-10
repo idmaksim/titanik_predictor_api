@@ -14,7 +14,7 @@ router = APIRouter(
 
 
 @router.post('', status_code=status.HTTP_200_OK)
-async def add_user(
+async def predict(
     user_info: UserInfo,
     service: Annotated[ModelService, Depends(model_service)],
 ):
